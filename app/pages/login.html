@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciar seccion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="title">sistema de gestión académica </h1>
+            <form id="login__form" class="form">
+                <input name="user" id="user" class="form__input -user" required placeholder="user" type="text">
+                <input name="password" id="password" required placeholder="contraseña" class="form__input -password" type="password">
+            <input type="submit" value="entrar" class="form__input -submit">
+            <p class="escondido" id="error">error de inicio de seccion</p>
+            </form>
+            <p>¿no tienes una cuenta todavia? <a href="/register">registrate aqui</a></p>
+        </div>
+    </main>
+</body>
+</html>
