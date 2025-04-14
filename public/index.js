@@ -54,7 +54,4 @@ app.delete("/api/deleteNotification/:id", nt.deleteNotification)
 app.delete("/api/clearNotifications/:id", nt.clearNotifications)
 
 
-// Inicio del servidor
-app.listen(app.get("port"), () => {
-    console.log(`Server running on port ${app.get("port")}`);
-});
+
