@@ -14,16 +14,18 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Configuración de CORS
 const corsOptions = {
-    origin: ["http://localhost:5173","https://billing-pro.vercel.app"],
+    origin: ["http://localhost:5173", "https://billing-pro.vercel.app"],
     credentials: true,
 };
+
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions)); // 👈 MUY IMPORTANTE para manejar preflight
 
 // Inicialización del servidor
 const app = express();
 app.set("port", 3000);
 
 // Middlewares
-app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
