@@ -3,12 +3,12 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
-import { methods as authentication } from "./controllers/authentication.controllers.js";
-import { methods as authorization } from "./middlewares/authorization.js";
-import { methods as clients } from "./controllers/clients.js";
-import { methods as products } from "./controllers/products.js";
-import { methods as invoices } from "./controllers/Invoices.js";
-import { methods as nt } from "./controllers/nt.js";
+import { methods as authentication } from "../app/controllers/authentication.controllers.js";
+import { methods as authorization } from "../app//middlewares/authorization.js";
+import { methods as clients } from "../app//controllers/clients.js";
+import { methods as products } from "../app//controllers/products.js";
+import { methods as invoices } from "../app//controllers/Invoices.js";
+import { methods as nt } from "../app//controllers/nt.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
